@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1232px;
+  margin: 0 auto;
+  padding: 120px 0px;
+  width: 100%;
+}
+.title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.title-underline {
+  border: none;
+  width: 100px;
+  height: 4px;
+  margin: 0 auto;
+  background: #f5bd41;
+  margin-bottom: 80px;
+}
+.text-center {
+  text-align: center;
+}
+.offers-list {
+  display: flex;
+}
+.images-wrapper {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.item {
+  width: 25%;
+  text-align: center;
+}
+.item-text {
+  font-size: 24px;
+  line-height: 28px;
+}
