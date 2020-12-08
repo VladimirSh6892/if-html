@@ -25,7 +25,7 @@
   width: 100%;
 }
 .title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 40px;
   margin-bottom: 20px;
@@ -59,7 +59,7 @@
   text-align: center;
 }
 .item-text {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
@@ -84,16 +84,32 @@
 }
 ul {
   list-style-type: none;
-  color: #ffffff;
   font-size: 20px;
   line-height: 23px;
 }
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:visited {
+  color: #fce1e1;
+}
+a:active {
+  color: #d7faeb;
+}
 .text-top {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
 }
 li {
   margin-bottom: 24px;
+}
+.inc {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  padding-left: 103px;
+  padding-top: 64px;
 }
