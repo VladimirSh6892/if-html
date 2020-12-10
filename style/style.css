@@ -17,7 +17,141 @@
   padding: 0;
   box-sizing: border-box;
 }
+.stays{
+  color: #ffffff;
+  font-family: "Roboto",sans-serif;
+  font-size: 24px;
+}
+.attractions{
+  color: #ffffff;
+  font-family: "Roboto",sans-serif;
+  font-size: 24px;
+}
 
+.stays-underline{
+  border: none;
+  width: 50px;
+  height: 2px;
+  margin: 0 auto;
+  background: #f5bd41;
+  margin: 0 auto;
+}
+.page-header{
+  background-image: url(/if-html/image/castelmezzano-1979546.png);
+  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-position: -340px;
+}
+.page-header__navbar{
+  max-width: 1240px;
+  margin: 0px 58px;
+  padding-top: 51px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 343px;
+  justify-content: flex-start;
+}
+.account{
+  margin-left: 24px;
+}
+.night{
+  margin-left: 48px;
+}
+.attractions{
+  margin-left: 24px;
+}
+.stays-underline{
+  border: none;
+  width: 50px;
+  margin-left: 5px;
+  height: 2px;
+  background: #f5bd41;
+}
+.header__title{
+  margin-top: 196px;
+  font-family: "Roboto",sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  max-width: 542px;
+  max-height: 118px;
+  color: rgb(255, 255, 255);
+}
+.tabname{
+  display: flex;
+  max-width: 675px;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.destination-hotel{
+  font-family: "Roboto",sans-serif;
+  font-size: 18px;
+  color: #fff;
+  margin-left: 24px;
+}
+.check{
+  font-family: "Roboto",sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
+.table-searchbox{
+  width: 1223px;
+  height: 64px;
+  margin-top: 24px;
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius:8px;
+  border-top-right-radius:8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius:8px;
+}
+.destination{
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+ text-align: left;
+ vertical-align: middle;
+}
+.date{
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+text-align: center;
+vertical-align: middle;
+border: 4px; 
+border-radius: 8px;
+border-color: #F5BD41;
+}
+.people{
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+text-align: center;
+vertical-align: middle;
+}
+.search{
+font-family: "Roboto",sans-serif;
+font-weight: 500;
+font-size: 24px;
+text-align: center;
+vertical-align: middle;
+background-color: #3077C6;
+border-radius: 8px;
+color: #ffffff;
+}
+.store{
+  display: flex;
+  width: 270px;
+  height: 40px;
+  margin-top: 120px;
+  margin-left: 480px;
+  justify-content: space-between;
+}
 .container {
   max-width: 1232px;
   margin: 0 auto;
