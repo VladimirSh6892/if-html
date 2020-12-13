@@ -13,18 +13,21 @@
     url(../font/Roboto-Medium.woff2) format("woff2");
 }
 * {
+  font-family: "Roboto",sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+.container {
+  max-width: 1232px;
+  margin: 0 auto;
+}
 .stays{
   color: #ffffff;
-  font-family: "Roboto",sans-serif;
   font-size: 24px;
 }
 .attractions{
   color: #ffffff;
-  font-family: "Roboto",sans-serif;
   font-size: 24px;
 }
 
@@ -34,18 +37,15 @@
   height: 2px;
   margin: 0 auto;
   background: #f5bd41;
-  margin: 0 auto;
 }
 .page-header{
   background-image: url(/if-html/image/castelmezzano-1979546.png);
   height: 100vh;
   max-width: 1440px;
   margin: 0 auto;
-  background-position: -340px;
+  background-position: center;
 }
 .page-header__navbar{
-  max-width: 1240px;
-  margin: 0px 58px;
   padding-top: 51px;
 }
 .header {
@@ -79,7 +79,6 @@
 }
 .header__title{
   margin-top: 196px;
-  font-family: "Roboto",sans-serif;
   font-weight: 500;
   font-size: 50px;
   max-width: 542px;
@@ -93,13 +92,11 @@
   margin-top: 100px;
 }
 .destination-hotel{
-  font-family: "Roboto",sans-serif;
   font-size: 18px;
   color: #fff;
   margin-left: 24px;
 }
 .check{
-  font-family: "Roboto",sans-serif;
   font-size: 18px;
   color: #fff;
 }
@@ -108,41 +105,42 @@
   height: 64px;
   margin-top: 24px;
   background-color: rgb(255, 255, 255);
-  border-top-left-radius:8px;
-  border-top-right-radius:8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius:8px;
+  border-radius:8px;
 }
 .destination{
-  font-family: "Roboto", sans-serif;
   font-size: 18px;
- text-align: left;
- vertical-align: middle;
+  width: 465px;
+  height: 63px;
+  text-align: center;
+  vertical-align: middle;
+  border: aliceblue;
 }
 .date{
-  font-family: "Roboto", sans-serif;
   font-size: 18px;
-text-align: center;
-vertical-align: middle;
-border: 4px; 
-border-radius: 8px;
-border-color: #F5BD41;
+  width: 255px;
+  height: 63px;
+  border: -6px; 
+  border-radius: 8px;
+  border-color: #F5BD41;
 }
 .people{
-  font-family: "Roboto", sans-serif;
   font-size: 18px;
-text-align: center;
-vertical-align: middle;
+  width: 300px;
+  height: 63px;
+  text-align: center;
+  vertical-align: middle;
+  border: aliceblue;
 }
 .search{
-font-family: "Roboto",sans-serif;
-font-weight: 500;
-font-size: 24px;
-text-align: center;
-vertical-align: middle;
-background-color: #3077C6;
-border-radius: 8px;
-color: #ffffff;
+  font-weight: 500;
+  font-size: 24px;
+  width: 190px;
+  height: 63px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #3077C6;
+  border-radius: 8px;
+  color: #ffffff;
 }
 .store{
   display: flex;
@@ -152,17 +150,13 @@ color: #ffffff;
   margin-left: 480px;
   justify-content: space-between;
 }
-.container {
-  max-width: 1232px;
-  margin: 0 auto;
+.offer {
   padding: 120px 0px;
   width: 100%;
 }
 .title {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 40px;
-  margin-bottom: 20px;
 }
 .title-underline {
   border: none;
@@ -170,7 +164,7 @@ color: #ffffff;
   height: 4px;
   margin: 0 auto;
   background: #f5bd41;
-  margin-bottom: 80px;
+  margin-top: 20px;
 }
 .text-center {
   text-align: center;
@@ -186,6 +180,7 @@ color: #ffffff;
   justify-content: center;
   display: flex;
   align-items: center;
+  margin-top: 80px;
   margin-bottom: 48px;
 }
 .item {
@@ -193,7 +188,6 @@ color: #ffffff;
   text-align: center;
 }
 .item-text {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
@@ -232,16 +226,14 @@ a:active {
   color: #d7faeb;
 }
 .text-top {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
 }
 li {
-  margin-bottom: 24px;
+  margin-top: 24px;
 }
 .inc {
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #ffffff;
   padding-top: 64px;
