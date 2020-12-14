@@ -41,7 +41,7 @@
 .page-header{
   background-image: url(/if-html/image/castelmezzano-1979546.png);
   height: 100vh;
-  max-width: 1440px;
+  max-width: 100hv;
   margin: 0 auto;
   background-position: center;
 }
@@ -147,7 +147,8 @@
   width: 270px;
   height: 40px;
   margin-top: 120px;
-  margin-left: 480px;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: space-between;
 }
 .offer {
@@ -209,6 +210,7 @@
 }
 .column {
   width: 33%;
+  margin-top: 97px;
 }
 ul {
   list-style-type: none;
@@ -237,4 +239,5 @@ li {
   font-size: 14px;
   color: #ffffff;
   padding-top: 64px;
+  padding-bottom: 120px;
 }
