@@ -249,3 +249,42 @@ li {
   padding-top: 64px;
   padding-bottom: 120px;
 }
+
+@media only screen and (max-width: 1024px) {
+
+  .page-header {
+    display: none;
+  }
+
+  .footer_text {
+    text-decoration: underline;
+  }
+
+  .footer .container {
+    padding: 120px 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .page-header {
+    display: none;
+  }
+
+  .col-4 {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .images-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .column {
+    text-align: center;
+  }
+
+  .footer_text {
+    text-decoration: underline;
+  }
+}
