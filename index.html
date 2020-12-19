@@ -3,10 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Triphouse</title>
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
+    <svg class="sprites" xmlns="http://www.w3.org/2000/svg">
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="night">
+        <path d="M25.61 10.61V4.39h-6.22L15 0l-4.39 4.39H4.39v6.22L0 15l4.39 4.39v6.22h6.22L15 30l4.39-4.39h6.22v-6.22L30 15l-4.39-4.39zM15 22.958a7.924 7.924 0 01-3.316-.73c2.732-1.26 4.642-4.018 4.642-7.228s-1.91-5.968-4.642-7.228A7.924 7.924 0 0115 7.042c4.39 0 7.958 3.568 7.958 7.958 0 4.39-3.568 7.958-7.958 7.958z" fill="#fff"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="accountcircle">
+        <path d="M20 0C8.96 0 0 8.96 0 20s8.96 20 20 20 20-8.96 20-20S31.04 0 20 0zm0 6c3.32 0 6 2.68 6 6s-2.68 6-6 6-6-2.68-6-6 2.68-6 6-6zm0 28.4c-5 0-9.42-2.56-12-6.44.06-3.98 8-6.16 12-6.16 3.98 0 11.94 2.18 12 6.16-2.58 3.88-7 6.44-12 6.44z" fill="#fff"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 92" id="supp">
+        <path d="M67.167 54.333V71h-8.334V54.333h8.334zm-50 0V71H13a4.179 4.179 0 01-4.167-4.167v-12.5h8.334zM38 .167C17.292.167.5 16.958.5 37.667v29.166c0 6.917 5.583 12.5 12.5 12.5h12.5V46H8.833v-8.333C8.833 21.542 21.875 8.5 38 8.5s29.167 13.042 29.167 29.167V46H50.5v33.333h16.667V83.5H38v8.333h25c6.917 0 12.5-5.583 12.5-12.5V37.667c0-20.709-16.792-37.5-37.5-37.5z" fill="#3077C6"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 84" id="comm">
+        <path d="M54.5 8.667v29.166H13.542l-4.875 4.875V8.667H54.5zM58.667.333H4.5A4.179 4.179 0 00.333 4.5v58.333L17 46.167h41.667A4.179 4.179 0 0062.833 42V4.5A4.179 4.179 0 0058.667.333zM79.5 17h-8.333v37.5H17v8.333A4.179 4.179 0 0021.167 67H67l16.667 16.667v-62.5A4.179 4.179 0 0079.5 17z" fill="#3077C6"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 68" id="book">
+        <path d="M16.667 9h75V.667h-75C12.083.667 8.333 4.417 8.333 9v45.833H0v12.5h58.333v-12.5H16.667V9zm79.166 8.333h-25a4.179 4.179 0 00-4.166 4.167v41.667a4.179 4.179 0 004.166 4.166h25A4.179 4.179 0 00100 63.167V21.5a4.179 4.179 0 00-4.167-4.167zm-4.166 37.5H75V25.667h16.667v29.166z" fill="#3077C6"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 84" id="guest">
+        <path d="M83.5 29.333H57.208l3.959-19.041.125-1.334a6.272 6.272 0 00-1.834-4.416L55.042.167 27.625 27.625a8.147 8.147 0 00-2.458 5.875v41.667c0 4.583 3.75 8.333 8.333 8.333H71a8.277 8.277 0 007.667-5.083L91.25 49.042A8.232 8.232 0 0091.833 46v-8.333c0-4.584-3.75-8.334-8.333-8.334zM83.5 46L71 75.167H33.5V33.5l18.083-18.083-4.625 22.25H83.5V46zM.167 33.5h16.666v50H.167v-50z" fill="#3077C6"></path>
+      </symbol>
+    </svg>
       <div class="page-header">
         <div class="container">
           <div class="page-header__navbar">
@@ -15,10 +35,14 @@
               <div class="navigation">
                 <div class="stays">Stays</div>
                 <div class="attractions">Attractions</div>
-                <div class="night"><img src="./image/night.svg" alt="night"></div>
-                <div class="account"><img src="./image/account_circle.svg" alt="account_circle"></div>
+                <svg class="night">
+                  <use xlink:href="#night"></use>
+                </svg>
+                <svg class="account">
+                  <use xlink:href="#accountcircle"></use>
+                </svg>
                 <hr class="stays-underline">
-              </div>  
+              </div>
             </div>
             <div class="page-header__titles">
               <h1 class="header__title">Discover stays <br>to live, work or just relax</h1>
@@ -44,30 +68,38 @@
       </div>
       <div class="container">
         <div class="offer">
-          <h2 class="title text-center">What do we offer</h2>
+          <h2 class="col-4 title text-center">What do we offer</h2>
           <hr class="title-underline" />
           <div class="offers-list">
-            <div class="item">
+            <div class="col-4 item">
               <div class="images-wrapper">
-                <img src="./image/support.svg" alt="support" />
+                <svg class="images-wrapper__icon supp">
+                  <use xlink:href="#supp"></use>
+                </svg>
               </div>
               <span class="item-text">Support 24/7</span>
             </div>
-            <div class="item">
+            <div class="col-4 item">
               <div class="images-wrapper">
-                <img src="./image/communicate.svg" alt="communicate" />
+                <svg class="images-wrapper__icon comm">
+                  <use xlink:href="#comm"></use>
+                </svg>
               </div>
               <span class="item-text">Communicate directly</span>
             </div>
-            <div class="item">
+            <div class="col-4 item">
               <div class="images-wrapper">
-                <img src="./image/devices.svg" alt="devices" />
+                <svg class="images-wrapper__icon book">
+                  <use xlink:href="#book"></use>
+                </svg>
               </div>
               <span class="item-text">Book online</span>
             </div>
-            <div class="item">
+            <div class="col-4 item">
               <div class="images-wrapper">
-                <img src="./image/like.svg" alt="like" />
+                <svg class="images-wrapper__icon guest">
+                  <use xlink:href="#guest"></use>
+                </svg>
               </div>
               <span class="item-text">Real guest reviews</span>
             </div>
@@ -76,32 +108,36 @@
       </div>
       <footer>
         <div class="footer">
+          <div class="footer-logo">
+            <img src="image/logo_footer.png" alt="TripHouse logo" />
+          </div>
           <div class="container">
             <div class="columns">
               <section class="column">
                 <ul>
-                  <li class="text-top"><a href="#">About</a></li>                    <li><a href="#">How Triphouse works</a></li>
-                  <li><a href="#">Careers</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Terms</a></li>
+                  <li class="text-top"><a href="#" class="footer_text">About</a></li>
+                  <li><a href="#" class="footer_text list">How Triphouse works</a></li>
+                  <li><a href="#" class="footer_text list">Careers</a></li>
+                  <li><a href="#" class="footer_text list">Privacy</a></li>
+                  <li><a href="#" class="footer_text list">Terms</a></li>
                 </ul>
               </section>
               <section class="column">
                 <ul>
-                  <li class="text-top"><a href="#">Property types</a></li>
-                  <li><a href="#">Guest houses</a></li>
-                  <li><a href="#">Hotels</a></li>
-                  <li><a href="#">Apartments</a></li>
-                  <li><a href="#">Villas</a></li>
-                  <li><a href="#">Holiday homes</a></li>
-                  <li><a href="#">Hostels</a></li>
+                  <li class="text-top"><a href="#" class="footer_text">Property types</a></li>
+                  <li><a href="#" class="footer_text list">Guest houses</a></li>
+                  <li><a href="#" class="footer_text list">Hotels</a></li>
+                  <li><a href="#" class="footer_text list">Apartments</a></li>
+                  <li><a href="#" class="footer_text list">Villas</a></li>
+                  <li><a href="#" class="footer_text list">Holiday homes</a></li>
+                  <li><a href="#" class="footer_text list">Hostels</a></li>
                 </ul>
               </section>
               <section class="column">
                 <ul>
-                  <li class="text-top"><a href="#">Support</a></li>
-                  <li><a href="#">Contact Customer Service</a></li>
-                  <li><a href="#">FAQ</a></li>
+                  <li class="text-top"><a href="#" class="footer_text">Support</a></li>
+                  <li><a href="#" class="footer_text list">Contact Customer Service</a></li>
+                  <li><a href="#" class="footer_text list">FAQ</a></li>
                 </ul>
               </section>
             </div>
