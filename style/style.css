@@ -21,6 +21,68 @@
   box-sizing: border-box;
 }
 
+:root {
+  --col-size: calc(100% / 12);
+  --primary: #3077C6;
+  --primary-dark: #10367c;
+  --secondary: #f5bd41;
+
+  --primary-text: #383838;
+
+  --gray100: #121212;
+  --gray200: #1d1e1f;
+  --gray300: #4d4d4d;
+}
+
+[class*="col"] {
+  flex-grow: 1;
+  margin: 0 8px;
+}
+.col-1 {width: calc(var(--col-size));}
+.col-2 {width: calc(var(--col-size) * 2);}
+.col-3 {width: calc(var(--col-size) * 3);}
+.col-4 {width: calc(var(--col-size) * 4);}
+.col-5 {width: calc(var(--col-size) * 5);}
+.col-6 {width: 50%;}
+.col-7 {width: calc(var(--col-size) * 7);}
+.col-8 {width: calc(var(--col-size) * 8);}
+.col-9 {width: calc(var(--col-size) * 9);}
+.col-10 {width: calc(var(--col-size) * 10);}
+.col-11 {width: calc(var(--col-size) * 11);}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  :root {
+      --col-size: calc(100% / 12);
+  }
+  .col-1 {width: calc(var(--col-size));}
+  .col-2 {width: calc(var(--col-size) * 2);}
+  .col-3 {width: calc(var(--col-size) * 3);}
+  .col-4 {width: calc(var(--col-size) * 4);}
+  .col-5 {width: calc(var(--col-size) * 5);}
+  .col-6 {width: 50%;}
+  .col-7 {width: calc(var(--col-size) * 7);}
+  .col-8 {width: calc(var(--col-size) * 8);}
+  .col-9 {width: calc(var(--col-size) * 9);}
+  .col-10 {width: calc(var(--col-size) * 10);}
+  .col-11 {width: calc(var(--col-size) * 11);}
+  .col-12 {width: 100%;}
+}
+
+@media only screen and (max-width: 480px) {
+  :root {
+      --col-size: calc(100% / 6);
+  }
+  [class*="col-"] {
+      width: 100%;
+  }
+  .col-1 {width: calc(var(--col-size));}
+  .col-2 {width: calc(var(--col-size) * 2);}
+  .col-3 {width: calc(var(--col-size) * 3);}
+  .col-4 {width: calc(var(--col-size) * 4);}
+  .col-5 {width: calc(var(--col-size) * 5);}
+  .col-6 {width: 50%;} }
+
 .sprites{
   width: 0px;
   height: 0px;
@@ -51,7 +113,7 @@
 
 .page-header{
   background-image: url(/if-html/image/castelmezzano-1979546.png);
-  height: 100vh;
+  min-height: 100vh;
   max-width: 100hv;
   margin: 0 auto;
   background-position: center;
@@ -181,6 +243,7 @@
   margin-top: 120px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 120px;
   justify-content: space-between;
 }
 
@@ -294,10 +357,6 @@ li {
 
 @media only screen and (max-width: 1024px) {
 
-  .page-header {
-    display: none;
-  }
-
   .footer-logo{
     display: none;
   }
@@ -310,10 +369,6 @@ li {
 }
 
 @media only screen and (max-width: 768px) {
-
-  .page-header {
-    display: none;
-  }
 
   .offers-list {
     flex-wrap: wrap;
@@ -332,14 +387,6 @@ li {
 }
 
 @media only screen and (max-width: 480px) {
-
-  .page-header {
-    display: none;
-  }
-
-  .offer{
-    padding: 0px;
-  }
 
   .offers-list {
     flex-wrap: wrap;
