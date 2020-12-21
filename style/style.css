@@ -31,7 +31,7 @@
 .container {
   max-width: 1232px;
   margin: 0 auto;
-  padding: 16px 16px;
+  padding: 120px 16px;
   width: 100%;
 }
 
@@ -51,19 +51,24 @@
 .page-header{
   background-image: url(/if-html/image/castelmezzano-1979546.png);
   min-height: 100vh;
-  max-width: 100hv;
+  min-width: 100vh;
   margin: 0 auto;
   background-position: center;
+  align-items: center;
 }
 
 .page-header__navbar{
   padding-top: 51px;
+  
 }
 
 .header {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navigation{
@@ -91,16 +96,7 @@
   margin-left: 24px;
 }
 
-.stays-underline{
-  border: none;
-  width: 50px;
-  margin-left: 5px;
-  height: 2px;
-  background: #f5bd41;
-}
-
 .header__title{
-  margin-top: 196px;
   font-weight: 500;
   font-size: 50px;
   max-width: 542px;
@@ -127,38 +123,45 @@
 }
 
 .table-searchbox{
-  width: 1223px;
-  height: 64px;
-  margin-top: 24px;
-  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   border-radius:8px;
 }
 
+form{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
 .destination{
   font-size: 18px;
-  width: 465px;
+  width: 450px;
   height: 63px;
   text-align: center;
   vertical-align: middle;
   border: aliceblue;
+  background-color: rgb(255, 255, 255);
 }
 
 .date{
   font-size: 18px;
-  width: 255px;
+  width: 230px;
   height: 63px;
   border: -6px;
   border-radius: 8px;
   border-color: #F5BD41;
+  background-color: rgb(255, 255, 255);
 }
 
 .people{
   font-size: 18px;
-  width: 300px;
+  width: 280px;
   height: 63px;
   text-align: center;
   vertical-align: middle;
   border: aliceblue;
+  background-color: rgb(255, 255, 255);
 }
 
 .search{
@@ -187,7 +190,6 @@
 /*section offer*/
 
 .offer {
-  padding: 120px 0px;
   width: 100%;
 }
 
@@ -258,7 +260,6 @@
 
 .column {
   width: 33%;
-  margin-top: 97px;
 }
 
 ul {
@@ -354,6 +355,8 @@ li {
   .col-md-4 {width: 66.66%;}
   .col-md-5 {width: 75%;}
   .col-md-6 {width: 100%;}
+
+
 }
 
 /*
