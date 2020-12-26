@@ -11,8 +11,14 @@
       <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="night">
         <path d="M25.61 10.61V4.39h-6.22L15 0l-4.39 4.39H4.39v6.22L0 15l4.39 4.39v6.22h6.22L15 30l4.39-4.39h6.22v-6.22L30 15l-4.39-4.39zM15 22.958a7.924 7.924 0 01-3.316-.73c2.732-1.26 4.642-4.018 4.642-7.228s-1.91-5.968-4.642-7.228A7.924 7.924 0 0115 7.042c4.39 0 7.958 3.568 7.958 7.958 0 4.39-3.568 7.958-7.958 7.958z" fill="#fff"></path>
       </symbol>
+      <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="night_mobile">
+        <path d="M13.659 5.659V2.34H10.34L8 0 5.659 2.341H2.34V5.66L0 8l2.341 2.341v3.318H5.66L8 16l2.341-2.341h3.318V10.34L16 8l-2.341-2.341zM8 12.244c-.63 0-1.23-.141-1.768-.389A4.248 4.248 0 008.707 8a4.248 4.248 0 00-2.475-3.855A4.227 4.227 0 018 3.756 4.247 4.247 0 0112.244 8 4.247 4.247 0 018 12.244z" fill="#fff"></path>
+      </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="accountcircle">
         <path d="M20 0C8.96 0 0 8.96 0 20s8.96 20 20 20 20-8.96 20-20S31.04 0 20 0zm0 6c3.32 0 6 2.68 6 6s-2.68 6-6 6-6-2.68-6-6 2.68-6 6-6zm0 28.4c-5 0-9.42-2.56-12-6.44.06-3.98 8-6.16 12-6.16 3.98 0 11.94 2.18 12 6.16-2.58 3.88-7 6.44-12 6.44z" fill="#fff"></path>
+      </symbol>
+      <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="accountcircle_mobile">
+        <path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm0 3.6c1.992 0 3.6 1.608 3.6 3.6s-1.608 3.6-3.6 3.6a3.595 3.595 0 01-3.6-3.6c0-1.992 1.608-3.6 3.6-3.6zm0 17.04a8.64 8.64 0 01-7.2-3.864c.036-2.388 4.8-3.696 7.2-3.696 2.388 0 7.164 1.308 7.2 3.696A8.64 8.64 0 0112 20.64z" fill="#fff"></path>
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 92" id="supp">
         <path d="M67.167 54.333V71h-8.334V54.333h8.334zm-50 0V71H13a4.179 4.179 0 01-4.167-4.167v-12.5h8.334zM38 .167C17.292.167.5 16.958.5 37.667v29.166c0 6.917 5.583 12.5 12.5 12.5h12.5V46H8.833v-8.333C8.833 21.542 21.875 8.5 38 8.5s29.167 13.042 29.167 29.167V46H50.5v33.333h16.667V83.5H38v8.333h25c6.917 0 12.5-5.583 12.5-12.5V37.667c0-20.709-16.792-37.5-37.5-37.5z" fill="#3077C6"></path>
@@ -31,14 +37,17 @@
       <div class="page-header">
         <div class="page-header__navbar">
           <div class="header">
-            <div class="navbar"><img src="./image/logo_vector.svg" alt="Triphouse"></div>
+            <div class="navbar col-4 col-s-4 col-p-4 col-md-2">
+              <img src="./image/logo_vector.svg" alt="Triphouse">
+            </div>
+            <div class="header_logo__mobile"><img src="./image/logo_vector_mobile.png" alt="logo_triphouse_mobile"></div>
             <div class="navigation">
               <div class="menulink"><a href="#">Stays</a></div>
               <div class="menulink"><a href="#">Attractions</a></div>
-              <svg class="night">
+              <svg class="night col-2 col-s-1 col-p-1 col-md-1">
                 <a href="#"><use xlink:href="#night"></use></a>
               </svg>
-              <svg class="account">
+              <svg class="account col-2 col-s-1 col-p-1 col-md-1">
                 <a href="#"><use xlink:href="#accountcircle"></use></a>
               </svg>
             </div>
@@ -48,15 +57,15 @@
               <h1 class="header__title">Discover stays <br>to live, work or just relax</h1>
             </div>
             <div class="tabname">
-              <div class="destination-hotel col-12 col-s-12 col-p-12 col-md-6">Your destination or hotel name</div>
-              <div class="check col-12 col-s-12 col-p-12 col-md-6">Check-in — Check-out</div>
+              <div class="destination-hotel col-12 col-s-12 col-p-12">Your destination or hotel name</div>
+              <div class="check col-12 col-s-12 col-p-12">Check-in — Check-out</div>
             </div>
             <div class="table-searchbox">
               <form class="col-12 col-s-12 col-p-12 col-md-6">
-                <input type="text" placeholder="New York" class="destination col-4 col-s-6 col-p-12 col-md-6">
-                <input type="date" placeholder="Tue 15 Sept — Sat 19 Sept" class="date col-3 col-s-6 col-p-12 col-md-6">
-                <input type="text" placeholder="2 Adults — 0 Children — 1 Room" class="people col-5 col-s-6 col-p-12 col-md-6">
-                <button type="submit" class="search col-2 col-s-6 col-p-12 col-md-6">Search</button>
+                <input type="text" placeholder="New York" class="destination col-4 col-s-6 col-p-6 col-md-6">
+                <input type="date" placeholder="Tue 15 Sept — Sat 19 Sept" class="date col-3 col-s-6 col-p-6 col-md-3">
+                <input type="text" placeholder="2 Adults — 0 Children — 1 Room" class="people col-5 col-s-6 col-p-6 col-md-3">
+                <button type="submit" class="search col-2 col-s-6 col-p-6 col-md-6">Search</button>
               </form>
             </div>
             <div class="store">

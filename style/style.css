@@ -46,6 +46,8 @@
 
 .menulink:hover{
   border-bottom: 4px #f5bd41 solid;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
 }
 
 .page-header{
@@ -185,6 +187,10 @@ form{
   margin-right: auto;
   padding-bottom: 120px;
   justify-content: space-between;
+}
+
+.header_logo__mobile{
+  display: none;
 }
 
 /*section offer*/
@@ -330,6 +336,7 @@ li {
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
+
 }
 @media only screen and (max-width: 600px) {
   /* For desktop: */
@@ -347,7 +354,7 @@ li {
   .col-p-12 {width: 100%;}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 360px) {
 /* For mobile phones: */
   .col-md-1 {width: 16.66%;}
   .col-md-2 {width: 25%;}
@@ -356,6 +363,131 @@ li {
   .col-md-5 {width: 75%;}
   .col-md-6 {width: 100%;}
 
+  .page-header{
+    min-width: 360px;
+    min-height: 534px;
+  }
+  .page-header__navbar{
+    padding: 0;
+  }
+
+  .page-header__titles{
+    margin-top: 52px;
+  }
+
+  .container,
+  .header{
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .navbar{
+    display: none;
+  }
+
+  .header_logo__mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tabname{
+    display: none;
+  }
+  .header__title{
+    font-weight: 500;
+    font-size: 28px;
+  }
+  .menulink{
+    display: none;
+  }
+ 
+  .night{
+    width: 16px;
+    height: 16px;
+  }
+  .account{
+    width: 24px;
+    height: 24px;
+  }
+
+  .table-searchbox{
+    margin-top: 31px;
+  }
+
+  .destination,
+  .date,
+  .people,
+  .search{
+    border: 2px;
+    border-color: #f5bd41;
+  }
+
+  .store{
+    margin-top: 32px;
+    padding: 0;
+  }
+
+  .guest {
+    width: 70px;
+    height: 58px;
+  }
+
+  .comm {
+    width: 60px;
+    height: 58px;
+  }
+
+  .supp {
+    width: 54px;
+    height: 64px;
+  }
+
+  .book {
+    width: 70px;
+    height: 47px;
+  }
+
+  .item {
+    width: 100%;
+    height: 50%;
+    padding: 0;
+  }
+
+  .images-wrapper {
+    width: 70px;
+    height: 70px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+  }
+  .footer_text {
+    text-decoration: underline;
+    font-size: 15px;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .column {
+    margin: 0px;
+    text-align: center;
+    flex-basis: 30%;
+  }
+
+  .inc {
+    font-size: 12px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    line-height: 14px;
+  }
 
 }
 
