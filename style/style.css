@@ -34,7 +34,6 @@
 
 /*heder*/
 
-  /*logo-navigation*/
 header{
   background: url(/if-html/image/castelmezzano-1979546.png);
   min-height: 100vh;
@@ -61,12 +60,15 @@ header{
   justify-content: center;
   align-items: center;
 }
+
 .header-img-btn__night {
   margin-right: 22px;
 }
+
 .header-menu a {
   position: relative;
 }
+
 .header-menu__link:after {
   display: block;
   content: "";
@@ -78,6 +80,7 @@ header{
   left: 0;
   opacity: 0;
 }
+
 .header-menu__link:hover:after,
 .header-menu__link:active:after {
   width: 100%;
@@ -88,13 +91,16 @@ header{
 .header-menu a:first-child {
   margin-right: 24px;
 }
+
 .header-menu a:last-child {
   margin-right: 48px;
 }
+
 .header-img-btn__night {
   width: 32px;
   height: 32px;
 }
+
 .header-img-btn__account {
   width: 40px;
   height: 40px;
@@ -122,6 +128,7 @@ header{
   margin-bottom: 24px;
   color: #ffffff;
 }
+
 .page-header-form__lable label:first-child,
 .page-header-form__lable label:last-child {
   padding-left: 24px;
@@ -135,6 +142,7 @@ header{
   align-items: center;
   border-radius: 8px;
 }
+
 .page-header-form-input input {
   height: 64px;
   border-radius: 8px;
@@ -145,6 +153,7 @@ header{
   width: 25%;
   padding-left: 24px;
 }
+
 .page-header-form-input input:first-child {
   width: 52%;
 }
@@ -158,19 +167,23 @@ header{
   color: #ffffff;
   font-size: 24px;
 }
+
 .page-header-form-input input:nth-child(2) {
   border: 3px solid #f5bd41;
   margin-right: 50px;
 }
+
 .page-header-form-input input:nth-child(3) {
   margin-left: -50px;
 }
+
 .header-download-link-row {
   margin: 0 auto;
   text-align: center;
   padding-top: 120px;
   padding-bottom: 118px;
 }
+
 .header-download-link-row img:first-child {
   margin-right: 17px;
 }
@@ -350,41 +363,49 @@ li {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
 
   /*header mobile*/
   .header-head__logo-pc {
     display: none;
   }
+
   .header-head__logo-mobile {
     display: block;
   }
+
   .page-header-form__label,
   .page-header-form-input {
     display: none;
   }
+
   .header-menu {
     display: none;
   }
+
   .header {
     display: flex;
     align-items: center;
     padding-top: 12px;
   }
+
   .header-img-btn {
     display: flex;
     align-items: center;
   }
+
   .header-img-btn__night {
     width: 16px;
     height: 16px;
     margin: 0;
   }
+
   .header-img-btn__account {
     width: 24px;
     height: 24px;
     margin: 0 16px;
   }
+
   .header-menu a:hover::after {
     display: none;
   }
@@ -394,10 +415,12 @@ li {
     margin-bottom: 31px;
     padding: 0;
   }
+
   .header__title {
     font-size: 30px;
     line-height: 35px;
   }
+
   .page-header-form-mobie {
     display: flex;
     justify-content: center;
@@ -406,12 +429,14 @@ li {
     background-color: #f5bd41;
     padding: 8px;
   }
+
   .header-form-col-inputs {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
   }
+
   .header-form-mobie__search {
     margin-bottom: 8px;
     position: relative;
@@ -423,6 +448,7 @@ li {
     height: 16px;
     position: relative;
   }
+
   .header-img-btn__mobile_btn span,
   .header-img-btn__mobile_btn span::before,
   .header-img-btn__mobile_btn span::after {
@@ -432,25 +458,31 @@ li {
     height: 2.6px;
     background-color: #fff;
   }
+
   .header-img-btn__mobile_btn span::before,
   .header-img-btn__mobile_btn span::after {
     content: "";
     display: block;
     transition: 0.5s;
   }
+
   .header-img-btn__mobile_btn span::before {
     transform: translateY(-8px);
   }
+
   .header-img-btn__mobile_btn span::after {
     transform: translateY(6px);
   }
+
   .mobile-btn-active span:before {
     transform: skew(60deg, 20deg);
     width: 20px;
   }
+
   .mobile-btn-active span {
     height: 0;
   }
+
   .mobile-btn-active span:after {
     transform: skew(-60deg, -20deg);
     width: 20px;
@@ -459,15 +491,18 @@ li {
   .header-menu-navigation {
     position: relative;
   }
+
   .header-menu a {
     font-size: 15px;
     line-height: 20px;
     text-align: right;
   }
+
   .header-menu a:last-child,
   .header-menu a:first-child {
     margin-right: 0px;
   }
+
   .header-menu {
     position: absolute;
     display: flex;
@@ -475,37 +510,45 @@ li {
     right: 0;
     top: 20px;
   }
+
   .header-menu__link {
     transition: 0.7s;
     transform: translateY(40%);
-
     opacity: 0;
   }
+
   .header-menu__link:last-child {
     transition-delay: 0.2s;
   }
+
   .header-menu__link-activ {
     transform: translateY(60%);
     opacity: 1;
   }
+
   .search-icon {
     position: absolute;
     width: 16px;
     height: 16px;
     left: 12px;
   }
+
   .header-form-mobie__date input {
     margin-bottom: 8px;
   }
+
   .header-form-mobie__search .input_search {
     padding-left: 36px;
   }
+
   .header-form-col-inputs input {
     padding-left: 2%;
   }
+
   .input_date-in {
     margin-right: 2%;
   }
+
   .input_date-in,
   .input_date-out,
   .input-mobile__adults,
@@ -515,11 +558,13 @@ li {
     padding-bottom: 8px;
     padding-top: 24px;
   }
+
   .header-form-mobie__people {
     background-color: #ffffff;
     margin-bottom: 8px;
     border-radius: 4px;
   }
+
   input {
     height: 48px;
     padding: 0;
@@ -537,15 +582,18 @@ li {
     width: 1px;
     background: #bfbfbf;
   }
+
   .header-form-mobie__people input {
     width: 33%;
   }
+
   input::placeholder {
     font-size: 15px;
     font-weight: 500;
     margin-left: 10px;
     color: black;
   }
+
   .header-form-mobie__date {
     position: relative;
   }
@@ -560,15 +608,19 @@ li {
     color: #383838;
     top: 6px;
   }
+
   .date-in {
     left: 2%;
   }
+
   .date-out {
     left: 53%;
   }
+
   .header-form-mobie__people {
     position: relative;
   }
+
   .adults_label,
   .children_label,
   .rooms_label {
@@ -578,15 +630,19 @@ li {
     color: #383838;
     top: 6px;
   }
+
   .adults_label {
     left: 2%;
   }
+
   .children_label {
     left: 35%;
   }
+
   .rooms_label {
     left: 69%;
   }
+
   .search_btn {
     color: #ffffff;
     background-color: #3077c6;
@@ -594,9 +650,11 @@ li {
     font-size: 19px;
     line-height: 22px;
   }
+
   header {
     min-height: 0;
   }
+  
   .store {
     margin: 0 auto;
     padding-top: 32px;
@@ -608,6 +666,10 @@ li {
   .offer-title__text{
     font-size: 28px;
     padding-top: 24px;
+  }
+
+  .offer-title__underline{
+    display: none;
   }
 
   h2 {
