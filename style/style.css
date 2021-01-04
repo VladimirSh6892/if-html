@@ -66,6 +66,8 @@ header{
 
 .header-menu-navigation a {
   position: relative;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .header-menu-navigation__link:after {
@@ -126,6 +128,8 @@ header{
   margin-top: 100px;
   margin-bottom: 24px;
   color: #ffffff;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .header-form__lable label:first-child,
@@ -258,11 +262,6 @@ header{
   line-height: 28px;
 }
 
-.list {
-  font-size: 20;
-  font-weight: 400;
-}
-
 /*footer*/
 
 .footer-logo{
@@ -294,15 +293,20 @@ a {
 }
 
 a:visited {
-  color: #fce1e1;
+  color: #ffffff;
 }
 
 a:active {
-  color: #d7faeb;
+  color: #ffffff;
 }
 
 .text-top {
   font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.footer-text__list{
   font-size: 20px;
   line-height: 23px;
 }
@@ -781,19 +785,16 @@ li {
 
   /*section-offer mobile*/
 
-  .offer-title__text{
+  .offer-title__text,
+  h2{
+    font-weight: 500;
     font-size: 28px;
+    line-height: 33px;
     padding-top: 24px;
   }
 
   .offer-title__underline{
     display: none;
-  }
-
-  h2 {
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 33px;
   }
 
   .offers-list {
@@ -837,7 +838,7 @@ li {
     padding: 0;
   }
 
-  .offers-list span {
+  .offers-list-item__text {
     font-size: 15px;
     line-height: 18px;
   }
@@ -860,7 +861,9 @@ li {
 
   .footer-text {
     text-decoration: underline;
+    font-weight: 500px;
     font-size: 15px;
+    line-height: 18px;
   }
 
   .footer-text__list {
