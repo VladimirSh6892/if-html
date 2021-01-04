@@ -40,7 +40,6 @@
     </svg>
   </head>
   <body>
-   
     <header>
       <div class="container col-12">
         <div class="header">
@@ -48,11 +47,11 @@
             <img src="./image/logo_vector.svg" alt="Triphouse" class="header-head__logo-pc">
             <img src="./image/logo_vector_mobile.png" alt="Triphouse" class="header-head__logo-mobile">
           </div>
-          <div class="header-menu-navigation">
+          <div class="header-menu">
             <nav>
-              <div class="header-menu">
-                <a href="#" class="header-menu__link">Stays</a>
-                <a href="#" class="header-menu__link">Attractions</a>
+              <div class="header-menu-navigation">
+                <a href="#" class="header-menu-navigation__link">Stays</a>
+                <a href="#" class="header-menu-navigation__link">Attractions</a>
               </div>
             </nav>
             <div class="header-img-btn"> 
@@ -62,25 +61,25 @@
               <svg class="header-img-btn__account">
                 <a href="#"><use xlink:href="#accountcircle"></use></a>
               </svg>
-              <a href="#" class="header-img-btn__mobile_btn"onclick="$(this).toggleClass('mobile-btn-active');$('.header-menu__link').toggleClass('header-menu__link-activ');"><span></span></a>
+              <a href="#" class="header-img-btn__mobile_btn"onclick="$(this).toggleClass('mobile-btn-active');$('.header-menu-navigation__link').toggleClass('header-menu-navigation__link-activ');"><span></span></a>
             </div>
           </div>
         </div>
-        <div class="page-header__titles">
-          <h1 class="header__title">Discover stays <br>to live, work or just relax</h1>
+        <div class="header-titles">
+          <h1 class="header-titles__title">Discover stays <br>to live, work or just relax</h1>
         </div>
-        <form class="page-header-form">
-          <div class="page-header-form__label">
+        <form class="header-form">
+          <div class="header-form__label">
             <label class="col-5">Your destination or hotel name</label>
             <label class="col-3">Check-in — Check-out</label>
           </div>
-          <div class="page-header-form-input">
+          <div class="header-form__input">
             <input type="text" placeholder="Your destination or hotel name" class="col-4"/>
             <input type="date" placeholder="date" class="col-3"/>
             <input type="text" placeholder="2 Adults - 0 Children - 1 Room" class="col-3"/>
             <input type="submit" value="Search" class="col-2"/>
           </div>              
-          <div class="page-header-form-mobie">
+          <div class="header-form-mobie">
             <div class="header-form-mobie__search header-form-col-inputs">
               <svg class="search-icon">
                 <use xlink:href="#search-icon"></use>
@@ -157,42 +156,40 @@
       </div>
     </section>
     <footer>
-      <div class="footer">
-        <div class="container">
-          <div class="footer-logo">
-            <img src="image/logo_footer.png" alt="TripHouse logo" />
-          </div>
-          <div class="footer-columns">
-            <section class="footer-columns__column">
-              <ul>
-                <li class="text-top"><a href="#" class="footer-text">About</a></li>
-                <li><a href="#" class="footer-text__list">How Triphouse works</a></li>
-                <li><a href="#" class="footer-text__list">Careers</a></li>
-                <li><a href="#" class="footer-text__list">Terms</a></li>
-                <li><a href="#" class="footer-text__list">Privacy</a></li>
-              </ul>
-            </section>
-            <section class="footer-columns__column">
-              <ul>
-                <li class="text-top"><a href="#" class="footer-text">Property types</a></li>
-                <li><a href="#" class="footer-text__list">Guest houses</a></li>
-                <li><a href="#" class="footer-text__list">Hotels</a></li>
-                <li><a href="#" class="footer-text__list">Apartments</a></li>
-                <li><a href="#" class="footer-text__list">Villas</a></li>
-                <li><a href="#" class="footer-text__list">Holiday homes</a></li>
-                <li><a href="#" class="footer-text__list">Hostels</a></li>
-              </ul>
-            </section>
-            <section class="footer-columns__column">
-              <ul>
-                <li class="text-top"><a href="#" class="footer-text">Support</a></li>
-                <li><a href="#" class="footer-text__list">Contact Customer Service</a></li>
-                <li><a href="#" class="footer-text__list">FAQ</a></li>
-              </ul>
-            </section>
-          </div>
-          <div class="inc">© 2020 Triphouse, Inc. All rights reserved</div>
+      <div class="container">
+        <div class="footer-logo">
+          <img src="image/logo_footer.png" alt="TripHouse logo" />
         </div>
+        <div class="footer-columns">
+          <section class="footer-columns__column">
+            <ul>
+              <li class="text-top"><a href="#" class="footer-text">About</a></li>
+              <li><a href="#" class="footer-text__list">How Triphouse works</a></li>
+              <li><a href="#" class="footer-text__list">Careers</a></li>
+              <li><a href="#" class="footer-text__list">Terms</a></li>
+              <li><a href="#" class="footer-text__list">Privacy</a></li>
+            </ul>
+          </section>
+          <section class="footer-columns__column">
+            <ul>
+              <li class="text-top"><a href="#" class="footer-text">Property types</a></li>
+              <li><a href="#" class="footer-text__list">Guest houses</a></li>
+              <li><a href="#" class="footer-text__list">Hotels</a></li>
+              <li><a href="#" class="footer-text__list">Apartments</a></li>
+              <li><a href="#" class="footer-text__list">Villas</a></li>
+              <li><a href="#" class="footer-text__list">Holiday homes</a></li>
+              <li><a href="#" class="footer-text__list">Hostels</a></li>
+            </ul>
+          </section>
+          <section class="footer-columns__column">
+            <ul>
+              <li class="text-top"><a href="#" class="footer-text">Support</a></li>
+              <li><a href="#" class="footer-text__list">Contact Customer Service</a></li>
+              <li><a href="#" class="footer-text__list">FAQ</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="inc">© 2020 Triphouse, Inc. All rights reserved</div>
       </div>
     </footer>
   </body>
