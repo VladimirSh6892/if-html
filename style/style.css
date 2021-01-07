@@ -216,8 +216,6 @@ header{
   width: 100%;
 }
 
-.offer-title__text,
-.guests-loves__title-text,
 h2 {
   font-weight: 500;
   font-size: 40px;
@@ -274,7 +272,6 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 120px;
 }
 
 .guests-loves__image {
@@ -372,6 +369,53 @@ li {
   padding-bottom: 120px;
 }
 
+@media only screen and (max-width: 1232px) {
+  /* For tablets: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  /*offer*/
+
+  h2 {
+    padding-top: 50px;
+  }
+
+  .offers-list {
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+  }
+
+  /*guest-loves*/
+
+  .guests-loves__image {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .guests-loves__image-wrapper {
+    flex-basis: 50%;
+  }
+
+  .guest-loves-btn {
+    right: -1.5%;
+    top: 45%;
+  }
+
+  .guests-loves__city {
+    padding-bottom: 10px;
+  }
+
+}
 
 @media only screen and (max-width: 1024px) {
   /* For tablets: */
@@ -515,7 +559,6 @@ li {
 
   /*offer*/
 
-  .offer-title__text
   h2 {
     padding-top: 50px;
   }
@@ -863,15 +906,14 @@ li {
 
   /*section-offer mobile*/
 
-  .offer-title__text,
-  h2{
+  h2 {
     font-weight: 500;
     font-size: 28px;
     line-height: 33px;
     padding-top: 24px;
   }
 
-  .offer-title__underline{
+  .offer-title__text::after{
     display: none;
   }
 
@@ -922,10 +964,6 @@ li {
   }
 
   /*guests-loves*/
-
-  .guests-loves__title {
-    padding-top: 40px;
-  }
 
   .guests-loves__city {
     font-size: 12px;
