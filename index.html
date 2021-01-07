@@ -37,6 +37,23 @@
       <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="search-icon">
         <path d="M11.4351 10.0629H10.7124L10.4563 9.81589C11.3528 8.77301 11.8925 7.4191 11.8925 5.94625C11.8925 2.66209 9.23042 0 5.94625 0C2.66209 0 0 2.66209 0 5.94625C0 9.23042 2.66209 11.8925 5.94625 11.8925C7.4191 11.8925 8.77301 11.3528 9.81589 10.4563L10.0629 10.7124V11.4351L14.6369 16L16 14.6369L11.4351 10.0629ZM5.94625 10.0629C3.66838 10.0629 1.82962 8.22413 1.82962 5.94625C1.82962 3.66838 3.66838 1.82962 5.94625 1.82962C8.22413 1.82962 10.0629 3.66838 10.0629 5.94625C10.0629 8.22413 8.22413 10.0629 5.94625 10.0629Z" fill="#BFBFBF"/>
       </symbol>
+      <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="arow">
+        <g filter="url(#filter0_d)">
+          <circle cx="24" cy="20" r="20" fill="#F3F3F4"></circle>
+          <path d="M19.941 29.823l6.159-8.211a2 2 0 000-2.4L19.941 11" stroke="#383838" stroke-width="2"></path>
+        </g>
+        <defs>
+          <filter id="filter0_d" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+            <feOffset dy="4"></feOffset>
+            <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+            <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+          </filter>
+        </defs>
+      </symbol>
     </svg>
   </head>
   <body>
@@ -155,14 +172,44 @@
         </div>
       </div>
     </section>
-    <section>
-      <div class="conteiner">
-        <div class="guests-loves">
-          <h2 class="guests-loves__title-text">Homes guests loves</h2>
-          <div class="guests-loves__type-hotel">
-            
-          </div>
-        </div> 
+    <section class="guests">
+      <div class="container ">
+        <div class="guests-loves__title"><h2>Homes guests loves</h2></div>
+        <div class="guests-loves__image">
+          <figure class="guests-loves__image-wrapper guests-loves__image-hotel">
+            <img src="./image/leopold.png" alt="Hotel photo" class="guests-loves__image-photo">
+            <figcaption class = "guests-loves__destination">
+              <span class = "guests-loves__hotel">Hotel Leopold</span>
+              <span class="guests-loves__city"> Saint Petersburg, Russia</span>
+            </figcaption>
+          </figure>
+          <figure class="guests-loves__image-wrapper guests-loves__image-appartments">
+            <img src="./image/sunshine.png" alt="Appartments photo" class="guests-loves__image-photo">
+            <figcaption class = "guests-loves__destination">
+              <span class = "guests-loves__hotel">Apartment Sunshine</span>
+              <span class="guests-loves__city">Santa  Cruz de Tenerife,<br> Spain</span>
+            </figcaption>
+          </figure>
+          <figure class="guests-loves__image-wrapper guests-loves__image-villa">
+            <img src="./image/kunerag.png" alt="villa photo" class="guests-loves__image-photo">
+            <figcaption class = "guests-loves__destination">
+              <span class = "guests-loves__hotel">Villa Kunerad</span>
+              <span class="guests-loves__city">Vysokie Tatry, Slowakia</span>
+            </figcaption>
+          </figure>
+          <figure class="guests-loves__image-wrapper guests-loves__image-hostel">
+            <img src="./image/friendship.png" alt="Hostel photo" class="guests-loves__image-photo">
+            <figcaption class = "guests-loves__destination">
+              <span class = "guests-loves__hotel">Hostel Friendship</span>
+              <span class="guests-loves__city">Berlin, Germany</span>
+            </figcaption>
+            <a href="#">
+              <svg viewBox="0 0 48 48" class="guest-loves-btn">
+                <use xlink:href="#arow"></use>
+              </svg> 
+            </a>
+          </figure>
+        </div>
       </div>
     </section>
     <footer>
