@@ -225,15 +225,14 @@ h2 {
   padding-top: 120px;
 }
 
-.offer-title__underline {
-  border: none;
-  width: 100px;
+.offer-title__text::after {
+  content: "";
+  display: block;
   height: 4px;
-  margin: 0 auto;
-  background: #f5bd41;
-  margin-top: 20px;
+  width: 100px;
+  background-color: #f5bd41;
+  margin: 20px auto;
 }
-
 
 .offers-list {
   display: flex;
