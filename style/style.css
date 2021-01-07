@@ -216,7 +216,9 @@ header{
   width: 100%;
 }
 
-.offer-title__text {
+.offer-title__text,
+.guests-loves__title-text,
+h2 {
   font-weight: 500;
   font-size: 40px;
   text-align: center;
@@ -256,8 +258,57 @@ header{
   text-align: center;
 }
 
-.offers-list-item__text {
+.offers-list-item__text,
+.guests-loves__type-hotel__item-text {
   font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+/*guests-loves*/
+
+.guests{
+  background: #EAF0F9;
+}
+
+.guests-loves__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.guests-loves__image {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 121px;
+  padding-top: 105px;
+}
+
+.guest-loves-btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: -1.5%;
+  top: 35%;
+}
+
+.guests-loves__destination {
+  display: flex;
+  flex-direction: column;
+}
+
+.guests-loves__hotel {
+  color: #3077c6;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 24px 0;
+}
+
+.guests-loves__city {
+  color: #bfbfbf;
   font-size: 24px;
   line-height: 28px;
 }
@@ -337,6 +388,9 @@ li {
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+
+
+/*heder*/
 
   header {
     min-height: 0;
@@ -460,7 +514,10 @@ li {
     padding-bottom: 60px;
   }
 
-  .offer-title__text {
+  /*offer*/
+
+  .offer-title__text
+  h2 {
     padding-top: 50px;
   }
 
@@ -468,6 +525,28 @@ li {
     flex-wrap: wrap;
     padding-bottom: 60px;
   }
+
+  /*guest-loves*/
+
+  .guests-loves__image {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .guests-loves__image-wrapper {
+    flex-basis: 50%;
+  }
+
+  .guest-loves-btn {
+    right: -1.5%;
+    top: 45%;
+  }
+
+  .guests-loves__city {
+    padding-bottom: 10px;
+  }
+
+  /*footer*/
 
   .footer-columns {
     display: flex;
@@ -609,7 +688,7 @@ li {
     transform: rotate(0.5turn);
     width: 20px;
   }
-
+  
   .header-menu {
     position: relative;
   }
@@ -781,7 +860,7 @@ li {
     margin: 0 auto;
     padding-top: 32px;
     padding-bottom: 80px;
-  }
+  } 
 
   /*section-offer mobile*/
 
@@ -841,6 +920,48 @@ li {
   .offers-list-item__text {
     font-size: 15px;
     line-height: 18px;
+  }
+
+  /*guests-loves*/
+
+  .guests-loves__title {
+    padding-top: 40px;
+  }
+
+  .guests-loves__city {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .guests-loves__image {
+    padding-top: 32px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+
+  .guests-loves__hotel {
+    font-size: 12px;
+    line-height: 14px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+  }
+
+  .guests-loves__image-photo {
+    width: 156px;
+    height: 155px;
+  }
+
+  .guests-loves__image-villa,
+  .guests-loves__image-hostel {
+    display: none;
+  }
+
+  .guest-loves-btn {
+    width: 28px;
+    height: 28px;
+    right: -3%;
+    top: 27%;
   }
 
   /*footer mobile*/
