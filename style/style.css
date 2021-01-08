@@ -34,11 +34,8 @@
 /*heder*/
 
 header{
-  background: url(../image/castelmezzano-1979546.png);
+  background: url(../image/castelmezzano-1979546.png) no-repeat center;
   min-height: 100vh;
-  margin: 0 auto;
-  background-position: center;
-  align-items: center;
 }
 
 .header {
@@ -154,15 +151,17 @@ header{
   margin: 0;
   border: 0;
   width: 25%;
-  padding-left: 24px;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .header-form__input input:first-child {
-  width: 52%;
+  width: 48%;
 }
 
 .header-form__input input:last-child {
-  width: 16%;
+  width: 19%;
   background-color: #3077c6;
   display: flex;
   justify-content: center;
@@ -407,8 +406,8 @@ li {
   }
 
   .guest-loves-btn {
-    right: -1.5%;
-    top: 45%;
+    right: 1.5%;
+    top: 42%;
   }
 
   .guests-loves__city {
@@ -580,8 +579,8 @@ li {
   }
 
   .guest-loves-btn {
-    right: -1.5%;
-    top: 45%;
+    right: 1.5%;
+    top: 42%;
   }
 
   .guests-loves__city {
@@ -607,6 +606,11 @@ li {
 }
 
 @media only screen and (max-width: 480px) {
+
+  .container{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   /*header mobile*/
   .header-head__logo-pc {
@@ -997,8 +1001,8 @@ li {
   .guest-loves-btn {
     width: 28px;
     height: 28px;
-    right: -3%;
-    top: 27%;
+    right: -2%;
+    top: 32%;
   }
 
   /*footer mobile*/
