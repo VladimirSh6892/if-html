@@ -889,9 +889,9 @@ li {
     position: absolute;
     color: #383838;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
     transition: 0.5s;
-    left: 9%;
+    left: 15%;
     top: 30%;
   }
 
@@ -939,13 +939,13 @@ li {
     height: 48px;
     font-size: 19px;
     font-weight: 500;
-    background-color: #f3f3f4;
+    color: #ffffff;
+    background-color: #3077c6;
     transition: 0.2s;
   }
 
   .header-form-mobile__search-btn input:hover {
-    color: #ffffff;
-    background-color: #3077c6;
+    background-color: #0f53a0;
     transition: 1s;
   }
  
