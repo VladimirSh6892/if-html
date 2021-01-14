@@ -371,6 +371,7 @@ h2 {
 }
 
 .destenation-btn__item:hover {
+  color: #ffffff;
   background-color: #3077c6;
   transition: 1s;
 }
