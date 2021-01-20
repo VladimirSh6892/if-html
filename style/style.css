@@ -379,10 +379,8 @@ h2 {
 
 .destenation-image {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 64px;
-  height: 390px;
 }
 
 .destenation-image figcaption {
@@ -518,11 +516,18 @@ h2 {
 
 /*guests reviews*/
 
+.banner{
+  display: none;
+}
+
+.reviews-title-mobile{
+  display: none;
+}
+
 .reviews-cardlist{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 104px;
   padding-bottom: 120px;
 }
@@ -534,9 +539,10 @@ h2 {
 .reviews-card{
   display: flex;
   flex-wrap: wrap;
-  width: 32%;
   width: 400px;
   height: 760px;
+  margin: 8px;
+  background-color: #EAF0F9;
 }
 
 .reviews-card__items{
@@ -544,9 +550,12 @@ h2 {
   flex-flow: column;
 }
 
-.reviews-card-body{
-  background-color: #EAF0F9;
-  height: 360px;
+.reviews-card__items img{
+  width: 100%;
+}
+
+.navigation{
+  display: none;
 }
 
 .cost{
@@ -1020,6 +1029,31 @@ li {
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 10px;
+  }
+
+  /*reviews card*/
+
+  .reviews-card{
+    height: 680px;
+  }
+
+  .reviews-cardlist{
+    margin-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .ourika{
+    display: none;
+  }
+
+  .reviews-btn{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: -1%;
+    top: 21%;
   }
 
   /*footer*/
@@ -1476,7 +1510,6 @@ li {
 
   .destenation {
     padding-top: 14px;
-    padding-bottom: 40px;
   }
   .destenation-btn {
     display: flex;
@@ -1501,7 +1534,6 @@ li {
 
   .destenation-image{
     display: flex;
-    height: 195px;
     margin-top: 29px;
   }
 
@@ -1509,9 +1541,13 @@ li {
     font-size: 12px;
   }
 
+  .destenation-image-items{
+    padding: 4px;
+  }
+
   .destenation-image-items img {
-    width: 156px;
-    height: 156px;
+    width: 100%;
+    height: 100%;
   }
 
   .slider-btn-mobile {
@@ -1519,17 +1555,167 @@ li {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 57%;
-    right: -2.5%;
+    top: 63%;
+    right: 1.5%;
     width: 28px;
     height: 28px;
   }
 
   .destenation {
     position: relative;
+    padding-bottom: 0px;
+  }
+
+  /*reviews card*/
+
+  .section-reviews {
+    background-color:#EAF0F9;
+  }
+
+  .reviews-card{
+    height: 626px;
+  }
+
+  .reviews-cardlist {
+    margin-top: 32px;
+  }
+
+  .reviews-title{
+    display: none;
+  }
+
+  .rotterdam {
+    display: none;
+  }
+
+  .reviews-title-mobile{
+    display: block;
+    padding-top: 16px;
+  }
+
+  .reviews-btn{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: -1%;
+    top: 18%;
+  }
+
+  .navigation{
+    display: block;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 32px;
+  }
+
+  .navigation-point{
+    width: 56px;
+    height: 8px;
+  }
+
+  .reviews-cardlist{
+    padding-bottom: 0px;
   }
 
 
+  .banner {
+    background-color: #ffffff;
+  }
+  .banner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    height: 106px;
+  }
+  .banner span {
+    font-size: 12px;
+  }
+  .banner a {
+    font-size: 14px;
+    cursor: pointer;
+    color: #3077C6;
+  }
+  .banner {
+    display: block;
+  }
+
+  .cost{
+    display: none;
+  }
+
+  .reviews-card-body__hotel-title{
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 0px;
+    margin-left: 18px;
+  }
+  
+  .reviews-card-body__hotel-rating{
+    width: 39px;
+    height: 26px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-right: 16px;
+  }
+  
+  .reviews-card-body__contrev-country{
+    margin-top: 8px;
+    margin-left: 18px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  
+  .reviews-card-body__contrev-reviews{
+    margin-top: 10px;
+    margin-right: 16px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .owner-account{
+    margin-top: 16px;
+    margin-left: 21px;
+    width: 43px;
+    height: 43px;
+  }
+  
+  .accountreviews{
+    width: 43px;
+    height: 43px;
+  }
+  
+  .owner-data{
+    margin-top: 19px;
+    margin-left: 12px;
+  }
+  
+  .owner-data__name,
+  .reviews-card-text{
+    font-size: 15px;
+  }
+  
+  .owner-data__country{
+    font-size: 15px;
+    margin-top: 4px;
+  }
+  
+  .owner-data__country-img{
+    width: 18px;
+    height: 18px;
+  }
+  
+  .reviews-card-text{
+    margin-top: 20px;
+  }
+  
+  .reviews-btn{
+    display: none;
+  }
 
   /*footer mobile*/
 
