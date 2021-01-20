@@ -674,7 +674,6 @@ h2 {
   top: 21%;
 }
 
-
 /*footer*/
 
 .footer-logo{
@@ -1035,7 +1034,7 @@ li {
   /*reviews card*/
 
   .reviews-card{
-    height: 680px;
+    height: 720px;
   }
 
   .reviews-cardlist{
@@ -1511,6 +1510,7 @@ li {
   .destenation {
     padding-top: 14px;
   }
+
   .destenation-btn {
     display: flex;
     margin-top: 32px;
@@ -1520,6 +1520,7 @@ li {
     justify-content: space-between;
     overflow: hidden;
   }
+
   .destenation-btn__item {
     display: inline-flex;
     font-size: 19px;
@@ -1528,6 +1529,7 @@ li {
     max-width: 98px;
     border: 1px solid #f3f3f4;
   }
+
   .destenation-btn__item:nth-child(3) {
     max-width: 98px;
   }
@@ -1570,10 +1572,6 @@ li {
 
   .section-reviews {
     background-color:#EAF0F9;
-  }
-
-  .reviews-card{
-    height: 626px;
   }
 
   .reviews-cardlist {
@@ -1619,10 +1617,10 @@ li {
     padding-bottom: 0px;
   }
 
-
   .banner {
     background-color: #ffffff;
   }
+
   .banner-wrapper {
     display: flex;
     justify-content: space-between;
@@ -1634,14 +1632,17 @@ li {
   .banner-close{
     padding-right: 16px;
   }
+
   .banner span {
     font-size: 12px;
   }
+
   .banner a {
     font-size: 14px;
     cursor: pointer;
     color: #3077C6;
   }
+  
   .banner {
     display: block;
   }
