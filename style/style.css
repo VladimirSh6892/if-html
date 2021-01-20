@@ -1630,6 +1630,10 @@ li {
     background-color: #ffffff;
     height: 106px;
   }
+
+  .banner-close{
+    padding-right: 16px;
+  }
   .banner span {
     font-size: 12px;
   }
