@@ -304,7 +304,8 @@ h2 {
 }
 
 .guests-loves__title,
-.destenation-title {
+.destenation-title,
+.reviews-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,10 +379,8 @@ h2 {
 
 .destenation-image {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 64px;
-  height: 390px;
 }
 
 .destenation-image figcaption {
@@ -513,6 +512,166 @@ h2 {
 
 .destenation-banner__close::before {
   transform: rotate(-45deg);
+}
+
+/*guests reviews*/
+
+.banner{
+  display: none;
+}
+
+.reviews-title-mobile{
+  display: none;
+}
+
+.reviews-cardlist{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 104px;
+  padding-bottom: 120px;
+}
+
+.reviews-cardlist{
+  position: relative;
+}
+
+.reviews-card{
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 760px;
+  margin: 8px;
+  background-color: #EAF0F9;
+}
+
+.reviews-card__items{
+  display: flex;
+  flex-flow: column;
+}
+
+.reviews-card__items img{
+  width: 100%;
+}
+
+.navigation{
+  display: none;
+}
+
+.cost{
+  display: flex;
+  padding-left: 24px;
+  align-items: center;
+  font-size: 18px;
+  line-height: 21px;
+  height: 48px;
+  margin-top: -48px;
+  background-color: rgba(56, 56, 56, 0.7);
+  color: #fff;
+  opacity: 0,2;
+  text-align: center;
+}
+
+.reviews-card-body__hotel,
+.reviews-card-body__contrev{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.reviews-card-body__hotel-title{
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-top: 24px;
+  margin-left: 24px;
+  color: #3077C6;
+}
+
+.reviews-card-body__hotel-rating{
+  display: flex;
+  width: 48px;
+  height: 32px;
+  background-color: #10367C;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin-top: 24px;
+  margin-right: 24px;
+}
+
+.reviews-card-body__contrev-country{
+  margin-top: 5px;
+  margin-left: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #3077C6;
+}
+
+.reviews-card-body__contrev-reviews{
+  margin-top: 8px;
+  margin-right: 24px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #BFBFBF;
+}
+
+.owner-account{
+  margin-top: 29px;
+  margin-left: 29px;
+  width: 53px;
+  height: 53px;
+}
+
+.accountreviews{
+  width: 53px;
+  height: 53px;
+}
+
+.reviews-card-body__owner{
+  display: flex;
+  flex-direction: row;
+}
+
+.owner-data{
+  display: flex;
+  flex-direction: column;
+  margin-top: 31px;
+  margin-left: 21px;
+}
+
+.owner-data__name,
+.reviews-card-text{
+  font-size: 18px;
+}
+
+.owner-data__country{
+  font-size: 18px;
+  color: #BFBFBF;
+  margin-top: 8px;
+}
+
+.owner-data__country-img{
+  width: 18px;
+  height: 18px;
+}
+
+.reviews-card-text{
+  margin-top: 22px;
+}
+
+.reviews-btn{
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: -0.8%;
+  top: 21%;
 }
 
 /*footer*/
@@ -869,6 +1028,31 @@ li {
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 10px;
+  }
+
+  /*reviews card*/
+
+  .reviews-card{
+    height: 720px;
+  }
+
+  .reviews-cardlist{
+    margin-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .ourika{
+    display: none;
+  }
+
+  .reviews-btn{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: -1%;
+    top: 21%;
   }
 
   /*footer*/
@@ -1325,8 +1509,8 @@ li {
 
   .destenation {
     padding-top: 14px;
-    padding-bottom: 40px;
   }
+
   .destenation-btn {
     display: flex;
     margin-top: 32px;
@@ -1336,6 +1520,7 @@ li {
     justify-content: space-between;
     overflow: hidden;
   }
+
   .destenation-btn__item {
     display: inline-flex;
     font-size: 19px;
@@ -1344,13 +1529,13 @@ li {
     max-width: 98px;
     border: 1px solid #f3f3f4;
   }
+
   .destenation-btn__item:nth-child(3) {
     max-width: 98px;
   }
 
   .destenation-image{
     display: flex;
-    height: 195px;
     margin-top: 29px;
   }
 
@@ -1358,9 +1543,13 @@ li {
     font-size: 12px;
   }
 
+  .destenation-image-items{
+    padding: 4px;
+  }
+
   .destenation-image-items img {
-    width: 156px;
-    height: 156px;
+    width: 100%;
+    height: 100%;
   }
 
   .slider-btn-mobile {
@@ -1368,17 +1557,170 @@ li {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 57%;
-    right: -2.5%;
+    top: 63%;
+    right: 1.5%;
     width: 28px;
     height: 28px;
   }
 
   .destenation {
     position: relative;
+    padding-bottom: 0px;
   }
 
+  /*reviews card*/
 
+  .section-reviews {
+    background-color:#EAF0F9;
+  }
+
+  .reviews-cardlist {
+    margin-top: 32px;
+  }
+
+  .reviews-title{
+    display: none;
+  }
+
+  .rotterdam {
+    display: none;
+  }
+
+  .reviews-title-mobile{
+    display: block;
+    padding-top: 16px;
+  }
+
+  .reviews-btn{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: -1%;
+    top: 18%;
+  }
+
+  .navigation{
+    display: block;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 32px;
+  }
+
+  .navigation-point{
+    width: 56px;
+    height: 8px;
+  }
+
+  .reviews-cardlist{
+    padding-bottom: 0px;
+  }
+
+  .banner {
+    background-color: #ffffff;
+  }
+
+  .banner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    height: 106px;
+  }
+
+  .banner-close{
+    padding-right: 16px;
+  }
+
+  .banner span {
+    font-size: 12px;
+  }
+
+  .banner a {
+    font-size: 14px;
+    cursor: pointer;
+    color: #3077C6;
+  }
+
+  .banner {
+    display: block;
+  }
+
+  .cost{
+    display: none;
+  }
+
+  .reviews-card-body__hotel-title{
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 0px;
+    margin-left: 18px;
+  }
+
+  .reviews-card-body__hotel-rating{
+    width: 39px;
+    height: 26px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-right: 16px;
+  }
+
+  .reviews-card-body__contrev-country{
+    margin-top: 8px;
+    margin-left: 18px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .reviews-card-body__contrev-reviews{
+    margin-top: 10px;
+    margin-right: 16px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .owner-account{
+    margin-top: 16px;
+    margin-left: 21px;
+    width: 43px;
+    height: 43px;
+  }
+
+  .accountreviews{
+    width: 43px;
+    height: 43px;
+  }
+
+  .owner-data{
+    margin-top: 19px;
+    margin-left: 12px;
+  }
+
+  .owner-data__name,
+  .reviews-card-text{
+    font-size: 15px;
+  }
+
+  .owner-data__country{
+    font-size: 15px;
+    margin-top: 4px;
+  }
+
+  .owner-data__country-img{
+    width: 18px;
+    height: 18px;
+  }
+
+  .reviews-card-text{
+    margin-top: 20px;
+  }
+
+  .reviews-btn{
+    display: none;
+  }
 
   /*footer mobile*/
 
